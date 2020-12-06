@@ -1,16 +1,19 @@
 <resources>
-    <string name="app_name">Meuseum Tickets</string>
-    <string name="title_activity_natrual_history">NatrualHistory</string>
+    <string name="app_name">Museum Tickets</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
-
+    <string name="too_many_tickets">Maximum of 5 tickets for each!</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_african_american_history">National Museum African American History and Culture
     </string>
+    <string name="MoMA_name">MoMA</string>
+    <string name="Met_name">The Met</string>
+    <string name="Gug_name">The Guggenheim Museum</string>
+    <string name="Whitney_name">Whitney Museum of American Arts</string>
     <string-array name="mySpinner">
         <item>0 </item>
         <item>1 </item>
@@ -35,5 +38,4 @@
         <item>4 </item>
         <item>5 </item>
     </string-array>
-    <string name="too_many_tickets">You can only order up to 5 tickets</string>
 </resources>

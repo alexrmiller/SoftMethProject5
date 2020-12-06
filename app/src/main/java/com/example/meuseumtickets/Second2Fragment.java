@@ -1,3 +1,6 @@
+/*
+Authors: Alex Miller, Maudiel Romero
+ */
 package com.example.meuseumtickets;
 
 import android.os.Bundle;

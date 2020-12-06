@@ -1,3 +1,6 @@
+/*
+Authors: Alex Miller, Maudiel Romero
+ */
 package com.example.meuseumtickets;
 
 import android.content.Intent;
@@ -11,14 +14,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static String IMAGE;
+    public static String NAME;
+    public static String IMGLINK;
     private Button guggenheim;
     private Button met;
     private Button momaID;
     private Button whitney;
-    //public static final String IMAGE_natural = " https://naturalhistory.si.edu/ ";
-   // public static final String IMAGE_portrait = " https://naturalhistory.si.edu/ ";
-    //public static final String IMAGE_AfricanAmericanHistory = " african_american_and_culture";
-    //public static final String IMAGE_spy = "spy_museum";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,28 +48,36 @@ public class MainActivity extends AppCompatActivity {
 
     private void openNaturalActivity() {
         IMAGE = "MuseumImage";
+        IMGLINK="https://www.guggenheim.org/";
         Intent intent = new Intent(this, MainActivity2.class);
+        intent.putExtra(NAME, getResources().getString(R.string.Gug_name));
         intent.putExtra(IMAGE, R.drawable.guggenheim);
         startActivity(intent);
     }
 
     private void openAfricanHistoryActivity() {
         IMAGE = "MuseumImage";
+        IMGLINK="https://www.metmuseum.org/visit/plan-your-visit/met-cloisters";
         Intent intent = new Intent(this, MainActivity2.class);
+        intent.putExtra(NAME, getResources().getString(R.string.Met_name));
         intent.putExtra(IMAGE, R.drawable.met);
         startActivity(intent);
     }
 
     private void openPortraitActivity() {
         IMAGE = "MuseumImage";
+        IMGLINK="https://www.moma.org/";
         Intent intent = new Intent(this, MainActivity2.class);
+        intent.putExtra(NAME, getResources().getString(R.string.MoMA_name));
         intent.putExtra(IMAGE, R.drawable.moma);
         startActivity(intent);
     }
 
     public void openSpyActivity() {
         IMAGE = "MuseumImage";
+        IMGLINK="https://whitney.org/";
         Intent intent = new Intent(this, MainActivity2.class);
+        intent.putExtra(NAME, getResources().getString(R.string.Whitney_name));
         intent.putExtra(IMAGE, R.drawable.whitney);
         startActivity(intent);
 

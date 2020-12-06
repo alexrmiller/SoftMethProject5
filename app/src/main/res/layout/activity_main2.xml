@@ -15,7 +15,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="37dp"
         android:layout_marginRight="37dp"
-        android:onClick="https://www.spymuseum.org/"
+        android:onClick="getWebsite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/MuseumName"
@@ -53,7 +53,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="31dp"
         android:layout_marginLeft="31dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
         android:fontFamily="sans-serif-black"
@@ -61,9 +61,12 @@
         android:textAllCaps="false"
         android:textSize="30sp"
         android:textStyle="bold|italic"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/studentTicket"
