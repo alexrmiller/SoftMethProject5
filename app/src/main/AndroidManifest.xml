@@ -9,30 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MeuseumTickets">
-        <activity android:name=".MainActivity2"></activity>
         <activity
-            android:name=".SpyMuseum"
-            android:label="Ticket Price Calculator">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".NationalProtraitGaller"
-            android:label="Ticket Price Calculator">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".AfricanAmericanHistory"
-            android:label="Ticket Price Calculator">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
-        </activity>
-        <activity
-            android:name=".NaturalHistory"
+            android:name=".MainActivity2"
             android:label="Ticket Price Calculator">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

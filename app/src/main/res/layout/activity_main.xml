@@ -17,7 +17,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-black"
-        android:text="Washington DC Museums"
+        android:text="New York Museums"
         android:textAllCaps="false"
         android:textSize="30sp"
         android:textStyle="bold|italic"
@@ -47,10 +47,10 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/natural"
+                android:id="@+id/guggenheim"
                 android:layout_width="345dp"
                 android:layout_height="match_parent"
-                android:text="Natural Museum of Natural History "
+                android:text="The Guggenheim Museum "
                 android:tag="https://naturalhistory.si.edu/ "
                 app:backgroundTint="#CD7D7D" />
         </TableRow>
@@ -60,10 +60,10 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/AfricanHistory"
+                android:id="@+id/met"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="National Museum of African American History and Culture"
+                android:text="The Met"
                 android:tag="https://nmaahc.si.edu/ "
                 app:backgroundTint="#CD7D7D" />
         </TableRow>
@@ -73,11 +73,10 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/portrait"
+                android:id="@+id/momaID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="National Portrail Gallery"
-                app:srcCompat="@drawable/portrait_gallery" />
+                android:text="MOMA"
                 app:backgroundTint="#CD7D7D" />
         </TableRow>
 
@@ -86,11 +85,10 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/spy"
+                android:id="@+id/whitney"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spy Museum"
-                android:tag="https://www.spymuseum.org/"
+                android:text="Whitney Museum of American Arts"
                 app:backgroundTint="#CD7D7D" />
 
         </TableRow>

@@ -35,4 +35,5 @@
         <item>4 </item>
         <item>5 </item>
     </string-array>
+    <string name="too_many_tickets">You can only order up to 5 tickets</string>
 </resources>

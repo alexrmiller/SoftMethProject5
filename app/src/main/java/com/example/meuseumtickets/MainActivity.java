@@ -1,6 +1,7 @@
 package com.example.meuseumtickets;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,64 +11,64 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static String IMAGE;
-    private Button natural;
-    private Button AfricanHistory;
-    private Button portrait;
-    private Button spy;
+    private Button guggenheim;
+    private Button met;
+    private Button momaID;
+    private Button whitney;
     //public static final String IMAGE_natural = " https://naturalhistory.si.edu/ ";
    // public static final String IMAGE_portrait = " https://naturalhistory.si.edu/ ";
-    public static final String IMAGE_AfricanAmericanHistory = " african_american_and_culture";
-    public static final String IMAGE_spy = "spy_museum";
+    //public static final String IMAGE_AfricanAmericanHistory = " african_american_and_culture";
+    //public static final String IMAGE_spy = "spy_museum";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        natural = (Button) findViewById(R.id.natural);
-        natural.setOnClickListener(new View.OnClickListener() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        guggenheim = (Button) findViewById(R.id.guggenheim);
+        guggenheim.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openNaturalActivity();}});
-        AfricanHistory = (Button) findViewById(R.id.AfricanHistory);
-        AfricanHistory.setOnClickListener(new View.OnClickListener() {
+        met = (Button) findViewById(R.id.met);
+        met.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openAfricanHistoryActivity();}});
-        portrait = (Button) findViewById(R.id.portrait);
-        portrait.setOnClickListener(new View.OnClickListener() {
+        momaID = (Button) findViewById(R.id.momaID);
+        momaID.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openPortraitActivity();}});
-        spy = (Button) findViewById(R.id.spy);
-        spy.setOnClickListener(new View.OnClickListener() {
+        whitney = (Button) findViewById(R.id.whitney);
+        whitney.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) { openSpyActivity();}});
 
     }
 
     private void openNaturalActivity() {
-        IMAGE = " spy_museum";
+        IMAGE = "MuseumImage";
         Intent intent = new Intent(this, MainActivity2.class);
-        intent.putExtra(IMAGE, R.drawable.spy_museum);
+        intent.putExtra(IMAGE, R.drawable.guggenheim);
         startActivity(intent);
     }
 
     private void openAfricanHistoryActivity() {
-        IMAGE = "african_american_and_culture";
+        IMAGE = "MuseumImage";
         Intent intent = new Intent(this, MainActivity2.class);
-        intent.putExtra(IMAGE, R.drawable.spy_museum);
+        intent.putExtra(IMAGE, R.drawable.met);
         startActivity(intent);
     }
 
     private void openPortraitActivity() {
-        IMAGE = "african_american_and_culture";
+        IMAGE = "MuseumImage";
         Intent intent = new Intent(this, MainActivity2.class);
-        intent.putExtra(IMAGE, R.drawable.spy_museum);
+        intent.putExtra(IMAGE, R.drawable.moma);
         startActivity(intent);
     }
 
-
     public void openSpyActivity() {
-        IMAGE = IMAGE_spy;
+        IMAGE = "MuseumImage";
         Intent intent = new Intent(this, MainActivity2.class);
-        intent.putExtra(IMAGE, R.drawable.spy_museum);
+        intent.putExtra(IMAGE, R.drawable.whitney);
         startActivity(intent);
 
     }
